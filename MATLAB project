@@ -1,0 +1,36 @@
+
+//Robert
+clc;
+clear all;
+close all;
+a=imread('heart_sample.jpg');
+a=rgb2gray(a);
+subplot(2,2,1);
+imshow(a);
+b=edge(a,'roberts','horizontal');
+subplot(2,2,2);
+imshow(b);
+c=edge(a,'roberts','vertical');
+subplot(2,2,3);
+imshow(c);
+d=edge(a,'roberts');
+subplot(2,2,4);
+imshow(d);
+
+//perwitt
+clc;
+clear all;
+close all;
+a=imread('heart_sample.jpg');
+a=rgb2gray(a);
+subplot(2,2,1);
+imshow(a);
+b=edge(a,'roberts','horizontal');
+subplot(2,2,2);
+imshow(b);
+c=edge(a,'roberts','vertical');
+subplot(2,2,3);
+imshow(c);
+d=edge(a,'perwitt');
+subplot(2,2,4);
+imshow(d);
